@@ -1,0 +1,106 @@
+html,
+body {
+  font-family: "Times New Roman", Times, serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color:#333333;
+  border: 2px solid  #333333;
+
+}
+
+#DataMab {
+  height: 100%;
+  width:80%;
+  float: right;
+
+
+}
+
+#home{
+    width: 40px;
+    height: 35px;
+    background: url(img_navsprites.gif) 0 0;
+}
+#itemsearch {
+  position: fixed;
+  top: 10px;
+  height: 30px;
+   background-color: #000000;
+   color:#fff;
+  width: 19.5%;
+  font-size: 15px;
+ border: 2px solid red;
+    border-radius: 12px;
+	text-align:center;
+	background-position: 10px 10px; 
+    background-repeat: no-repeat;
+}
+
+
+#list-Stores{
+	
+	list-style-type: circle;
+	margin: 10px 10px 10px 10px;
+	font-size:20px;
+	text-align:center;
+
+}
+
+#list-items {
+  position: fixed;
+  height: 100%;
+  color:#fff;
+  overflow: auto;
+  top: 47px;
+  width: 19.5%;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  border: 2px solid red;
+    border-radius: 12px;
+}
+
+#list-Stores:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	background-color:#808080;
+	color: #fff;
+}
+
+
+@media only screen and (max-width: 100px) {
+
+ 
+ 
+    #itemsearch {
+    position: fixed;
+    left: 5%;
+    top: 40px;
+    height: 30px;
+    width: 29%;
+    font-size: 8px;
+    }
+
+	
+    #grathes {
+    position: fixed;
+    left: 85%;
+    right: 0;
+    top: 0;
+    width: 40px;
+    }
+	
+    #list-items {
+    position: fixed;
+    height:27%;
+    overflow: auto;
+    top: 80px;
+    left: 5%;
+    width: 30%;
+    background-color: #FFF0F5;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    }
+}

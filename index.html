@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Shope Food</title>
+	</head>
+	<body>
+	  
+	    <div id="list-holder">
+			    <ul id="list-items" data-bind="foreach: visible">
+					<li id="list-Stores" data-bind="text: name, click: $parent.showInfo"></li>
+				</ul>
+			</div>
+		<div id="DataMab" data-bind="click: hideElements"></div>				
+			<div data-bind="css: navStatus">
+			<input id="itemsearch"  placeholder="Search by" data-bind="textInput: valueapp, event: {keyup: MarkerUp}">
+		       </div>
+			   <div id="grathes" data-bind="click: showElements, clickBubble: false"></div>
+	
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqqKtSQ_kqMqzv8tHh8ztLxJk0FFca5Og&callback=Startapp" onerror="Handling_Error()" ></script>
+		
+		<script src='js/knockout-3.4.0.js'></script>
+		<script src='js/jquery-1.12.0.min.js'></script>
+		<script src="js/Dinfo.js"></script>
+		<script src="js/main.js"></script>
+	
+  </body>
+
+</html>
+
+
